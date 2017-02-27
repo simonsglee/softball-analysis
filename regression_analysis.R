@@ -33,7 +33,9 @@ kcsa16$Expected.W <- predict(lm, kcsa16)*10
 kcsa16_diff <- kcsa16 %>%
     mutate(Luck = adj.W - Expected.W) %>%
     select(Season:adj.W, Expected.W, Luck, everything()) %>%
-    arrange(desc(Expected.W)) %>%
+    arrange(desc(Expected.W))
+
+kcsa16_diff %>%
     print(n = 32)
 
 
