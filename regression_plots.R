@@ -37,8 +37,6 @@ plot2 <- ggplot(data = kcsa16_diff, aes(x = reorder(TEAM, Luck), y = Luck)) +
     ) +
     scale_fill_gradientn(colours = topo.colors(2), "Over/Under")
 
-setwd("C:/Program Files/Git/softball-analysis/plots")
-
 png(filename="regression_plot.png", 
     type="cairo",
     units="in", 

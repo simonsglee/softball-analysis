@@ -5,7 +5,7 @@ library(ggplot2)
 rm(list = ls())
 
 # load data
-kcsa <- read.csv("C:/Users/Simon/Documents/Rdirectory/kcsa/kcsa.csv")
+kcsa <- read.csv("~/Documents/r_directory/kcsa/kcsa.csv")
 kcsa <- as_tibble(kcsa)
 
 # Make adjusted wins and losses for ties
